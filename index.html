@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>Changelog Component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Changelog Component dari Ree project">
+        <meta property="og:title" content="Changelog Component">
+        <meta property="og:description" content="Changelog Component dari Ree project">
+        <meta property="og:type" content="website">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+        <style>
+            html,
+            body {
+                font-family: "Lexend Deca", sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 3rem;
+                height: 15%;
+            }
+
+            header h1 {
+                color: #1C6EA4;
+            }
+
+            header p {
+                padding: 0;
+                margin: 0;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+                height: 60%;
+            }
+            
+            .list {
+                display: grid;
+                grid-template-columns: 1.8fr 15px 2fr;
+                width: 50%;
+                gap: 1rem;
+                justify-content: center;
+                transition: all 0.3s;
+            }
+
+            .list:hover {
+                scale: 1.1;
+                cursor: pointer;
+            }
+
+            .tanggal {
+                display: flex;
+                justify-content: end;
+                margin-right: 1rem;
+                color: rgb(156, 156, 156);
+            }
+
+            .dot-line {
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .dot {
+                width: .7rem;
+                height: .7rem;
+                background: black;
+                border-radius: 50%;
+            }
+
+            .line {
+                width: .1rem;
+                height: 100%;
+                position: absolute;
+                background: black;
+                padding: 20px 0;
+            }
+
+            button {
+                margin-top: 3rem;
+                padding: .5rem 1.5rem;
+                border-radius: 8px;
+                background-color: black;
+                color: white;
+                transition: all .3s;
+                box-shadow: 0 3px 5px rgb(0, 0, 0,1);
+            }
+
+            button:hover {
+                background-color: white;
+                color: black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Changelog</h1>
+            <p>Ini adalah project yang telah saya lakukan di 1 minggu terakhir</p>
+        </header>
+        <main>
+            <section>
+                <div class="list">
+                    <p class="tanggal">21 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Personal Portfolio</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">20 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Basic-HTML-Website</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">19 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Single-Page-HTML-CV</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">18 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Data Portfolio</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">17 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Make a productivity timer</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">16 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Gift for my friend</p>
+                </div>
+                <div class="list">
+                    <p class="tanggal">15 November 2025</p>
+                    <div class="dot-line">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                    </div>
+                    <p>Time Blocking App</p>
+                </div>
+                <button>Visit complete changelog</button>
+            </section>
+            
+        </main>
+    </body>
+</html>
